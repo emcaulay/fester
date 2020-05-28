@@ -64,13 +64,16 @@
         </p>
         <p>If most cases, with the exception being the Sinai CSVs, you are probably okay with just using the default
           value.</p>
-        <p>The CSV columns that are required by the Fester service are:</p>
+        <p>The Fester service requires all CSVs to have these columns in their header row:</p>
         <ul>
           <li><code>Item ARK</code></li>
           <li><code>Parent ARK</code></li>
           <li><code>Object Type</code></li>
           <li><code>Title</code></li>
           <li><code>File Name</code></li>
+        </ul>
+        <p>If the CSV contains any rows where the <code>Object Type</code> is <code>Page</code>, then these additional columns are required:
+        <ul>
           <li><code>Item Sequence</code></li>
         </ul>
         <p>There are also some optional columns that will be used if they're found:</p>
